@@ -1,0 +1,101 @@
+body {
+	background-color: black;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+div#board {
+	display: none;
+	position: relative;
+	width: 1024px;
+	height: 863px;
+	margin: auto;
+	background: url("../img/board.jpg") no-repeat;
+	animation: fadein 0.7s linear;
+}
+div#messageArea {
+	position: absolute;
+	top: 40px;
+	left: 20px;
+	color: rgb(83, 175, 19);
+	font-size: 26px;
+	font-weight: 500;
+}
+.hit {
+	background: url("../img/ship.png") no-repeat center center;
+}
+.miss {
+	background: url("../img/miss.png") no-repeat center center;
+}
+form {	
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	padding: 15px;
+	background-color: rgb(83, 175, 19);
+}
+form input {
+	background-color: #98CF71;
+	border-color: rgb(83, 175, 19);
+	font-size: 1em;
+}
+table {
+	border-spacing: 0px;
+	position: absolute;
+	left: 173px;
+	top: 98px;
+}
+td {
+	width: 94px;
+	height: 94px;
+}
+
+.welcome-button-js {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	right: 0;
+	left: 0;
+	top: 40%;
+	border-radius: 30px;
+	background-color: rgb(83, 175, 19);
+	position: absolute;
+	height: 115px;
+	width: 400px;
+	font-size: 50px;
+	font-weight: 700;
+}
+.buttonReStart-js{
+	display: none; /*flex*/
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	right: 0;
+	left: 0;
+	top: 40%;
+	border-radius: 30px;
+	background-color: rgb(83, 175, 19);
+	position: absolute;
+	height: 115px;
+	width: 400px;
+	font-size: 50px;
+	font-weight: 700;
+}
+.infoForUser {
+	position: absolute;
+	margin: 0 auto;
+	left: 71%;
+	right: 0;
+	width: 350px;
+	top: 88%;
+	color: rgb(119, 241, 32);
+	font-size: 25px;
+}
